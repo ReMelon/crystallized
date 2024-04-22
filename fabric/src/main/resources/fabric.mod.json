@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "crystallized",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create: Crystallized",
+  "description": "Create Mod Addon focused on adding more ways to automate various resources through the addition of crystal growing.",
   "authors": [
-    "Me!"
+    "ReMelon"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/ReMelon/create_crystallized_fabric",
+    "issues": "https://github.com/ReMelon/create_crystallized_fabric/issues"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/crystallized/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "com.remelon.fabric.CrystallizedFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json",
-    "examplemod-common.mixins.json"
+    "crystallized.mixins.json",
+    "crystallized-common.mixins.json"
   ],
   "depends": {
     "minecraft": "${minecraft_version}",

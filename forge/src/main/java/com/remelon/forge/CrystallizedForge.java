@@ -1,17 +1,16 @@
-package net.examplemod.forge;
+package com.remelon.forge;
 
-import net.examplemod.ExampleBlocks;
-import net.examplemod.ExampleMod;
+import com.remelon.Crystallized;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(ExampleMod.MOD_ID)
-public class ExampleModForge {
-    public ExampleModForge() {
+@Mod(Crystallized.MOD_ID)
+public class CrystallizedForge {
+    public CrystallizedForge() {
         // registrate must be given the mod event bus on forge before registration
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ExampleBlocks.REGISTRATE.registerEventListeners(eventBus);
-        ExampleMod.init();
+        Crystallized.CREGISTRATE.registerEventListeners(eventBus);
+        Crystallized.init();
     }
 }

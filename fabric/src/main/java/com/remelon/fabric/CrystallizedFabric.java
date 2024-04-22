@@ -1,19 +1,18 @@
-package net.examplemod.fabric;
+package com.remelon.fabric;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
-import net.examplemod.ExampleBlocks;
-import net.examplemod.ExampleMod;
+import com.remelon.Crystallized;
 import net.fabricmc.api.ModInitializer;
 
-public class ExampleModFabric implements ModInitializer {
+public class CrystallizedFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        ExampleMod.init();
-        ExampleMod.LOGGER.info(EnvExecutor.unsafeRunForDist(
+        Crystallized.init();
+        Crystallized.LOGGER.info(EnvExecutor.unsafeRunForDist(
                 () -> () -> "{} is accessing Porting Lib on a Fabric client!",
                 () -> () -> "{} is accessing Porting Lib on a Fabric server!"
-                ), ExampleMod.NAME);
+                ), Crystallized.NAME);
         // on fabric, Registrates must be explicitly finalized and registered.
-        ExampleBlocks.REGISTRATE.register();
+        Crystallized.CREGISTRATE.register();
     }
 }

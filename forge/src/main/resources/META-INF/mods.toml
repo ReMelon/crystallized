@@ -1,33 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[${forge_version},)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "CC BY-NC-SA 4.0"
 
 [[mods]]
-modId = "examplemod"
+modId = "crystallized"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Create: Crystallized"
+authors = "ReMelon"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Create Mod Addon focused on adding more ways to automate various resources through the addition of crystal growing.
 '''
 logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.crystallized]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.crystallized]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.crystallized]]
 modId="create"
 mandatory=true
 versionRange="${create_version}"

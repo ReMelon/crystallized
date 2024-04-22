@@ -1,19 +1,22 @@
-package net.examplemod;
+package com.remelon;
 
 import com.simibubi.create.Create;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod {
-    public static final String MOD_ID = "examplemod";
-    public static final String NAME = "Example Mod";
+public class Crystallized {
+    public static final String MOD_ID = "crystallized";
+    public static final String NAME = "Create: Crystallized";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+
+    public static final CreateRegistrate CREGISTRATE = CreateRegistrate.create(Crystallized.MOD_ID);
 
 
     public static void init() {
         LOGGER.info("{} initializing! Create version: {} on platform: {}", NAME, Create.VERSION, ExampleExpectPlatform.platformName());
-        ExampleBlocks.init(); // hold registrate in a separate class to avoid loading early on forge
+        ItemRegistrate.init(); // hold registrate in a separate class to avoid loading early on forge
     }
 
     public static ResourceLocation id(String path) {

@@ -1,4 +1,4 @@
-package net.examplemod;
+package com.remelon;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
