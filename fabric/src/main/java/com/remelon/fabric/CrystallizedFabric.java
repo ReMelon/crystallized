@@ -1,5 +1,6 @@
 package com.remelon.fabric;
 
+import com.remelon.ItemRegistrate;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import com.remelon.Crystallized;
 import net.fabricmc.api.ModInitializer;
@@ -13,6 +14,6 @@ public class CrystallizedFabric implements ModInitializer {
                 () -> () -> "{} is accessing Porting Lib on a Fabric server!"
                 ), Crystallized.NAME);
         // on fabric, Registrates must be explicitly finalized and registered.
-        Crystallized.CREGISTRATE.register();
+        ItemRegistrate.CREGISTRATE.register();
     }
 }

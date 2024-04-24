@@ -11,15 +11,17 @@ public class Crystallized {
     public static final String NAME = "Create: Crystallized";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
-    public static final CreateRegistrate CREGISTRATE = CreateRegistrate.create(Crystallized.MOD_ID);
 
 
     public static void init() {
         LOGGER.info("{} initializing! Create version: {} on platform: {}", NAME, Create.VERSION, ExampleExpectPlatform.platformName());
-        ItemRegistrate.init(); // hold registrate in a separate class to avoid loading early on forge
+        ItemRegistrate.init();
+        GroupRegister.init();
+        // ResourcePack.init();
+        FluidRegistrate.init();
     }
 
-    public static ResourceLocation id(String path) {
-        return new ResourceLocation(MOD_ID, path);
+    public static ResourceLocation GenI(String name) {
+        return new ResourceLocation(MOD_ID, name);
     }
 }

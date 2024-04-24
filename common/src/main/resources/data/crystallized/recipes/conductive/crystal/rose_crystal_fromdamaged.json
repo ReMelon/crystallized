@@ -1,0 +1,13 @@
+{
+  "type": "create:smoking",
+  "ingredients": [
+    {
+      "item": "crystallized:damaged_conductive_filled"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:rose_quartz"
+    }
+  ]
+}
