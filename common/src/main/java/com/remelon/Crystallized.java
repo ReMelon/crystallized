@@ -2,6 +2,7 @@ package com.remelon;
 
 import com.simibubi.create.Create;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
